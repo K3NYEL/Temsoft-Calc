@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import font
 from colorama import Fore, Style, Back 
 
 class ButtonsLogic:
