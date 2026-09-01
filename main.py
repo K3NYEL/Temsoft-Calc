@@ -31,10 +31,14 @@ class Application(tk.Tk):
 
         self.buttons_logic = ButtonsLogic(self.entry)
 
-        self.buttons_frame = CTk.CTkFrame(self.main_frame, border_color="gray", border_width=1)
+        self.buttons_frame = CTk.CTkFrame(
+            self.main_frame, border_color="gray", border_width=1
+        )
         self.buttons_frame.pack(padx=5, pady=5)
 
-        self.footer_frame = CTk.CTkFrame(self.main_frame, height=40, border_color="gray", border_width=1)
+        self.footer_frame = CTk.CTkFrame(
+            self.main_frame, height=40, border_color="gray", border_width=1
+        )
         self.footer_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
         self.label_footer = CTk.CTkLabel(
@@ -77,6 +81,7 @@ class Application(tk.Tk):
             button = CustomButton(self.buttons_frame, text=text, command=command)
 
             button.grid(row=row, column=column, padx=5, pady=5, sticky="nsew")
+
 
 if __name__ == "__main__":
     app = Application()
